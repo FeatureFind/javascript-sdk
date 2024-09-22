@@ -1,0 +1,38 @@
+{
+  "name": "@featurefind/javascript-sdk",
+  "version": "0.1.0",
+  "description": "FeatureFind JavaScript SDK",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c",
+    "dev": "NODE_ENV=development rollup -c -w",
+    "publish": "npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeatureFind/javascript-sdk.git"
+  },
+  "keywords": [
+    "FeatureFind",
+    "Node",
+    "SDK"
+  ],
+  "author": "FeatureFind",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FeatureFind/javascript-sdk/issues"
+  },
+  "homepage": "https://github.com/FeatureFind/javascript-sdk#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
+    "rollup": "^2.79.1",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
