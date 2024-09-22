@@ -20,7 +20,7 @@ class FeatureFindCustomElement extends HTMLElement {
   connectedCallback() {
     const API_URL =
       process.env.NODE_ENV === "production"
-        ? "https://api.featurefind.com"
+        ? "https://api.featurefind.io"
         : "http://localhost:7777";
     let hasActioned = false;
 

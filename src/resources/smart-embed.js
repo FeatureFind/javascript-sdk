@@ -10,7 +10,7 @@ const buildFeedback = (data) => {
 export const createSmartEmbedResource = (data, orgId) => {
   const apiURL =
     process.env.NODE_ENV === "production"
-      ? "https://api.featurefind.com"
+      ? "https://api.featurefind.io"
       : "http://localhost:7777";
   return {
     init: (token, options = {}) => {

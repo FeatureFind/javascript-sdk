@@ -1,6 +1,6 @@
 {
   "name": "@featurefind/javascript-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FeatureFind JavaScript SDK",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
     "dev": "NODE_ENV=development rollup -c -w",
-    "publish": "npm run build && npm publish --access public"
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
